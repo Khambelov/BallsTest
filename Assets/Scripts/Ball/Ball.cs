@@ -37,7 +37,9 @@ public class Ball : MonoBehaviour
         //Заполнение списка координат из JSON 
         for (int i = 0; i < coordinates["x"].Count; i++)
         {
-            routes.Add(new Vector3(coordinates["x"][i].AsFloat, coordinates["y"][i].AsFloat, coordinates["z"][i].AsFloat));
+            routes.Add(new Vector3(coordinates["x"][i].AsFloat, 
+                                   coordinates["y"][i].AsFloat, 
+                                   coordinates["z"][i].AsFloat));
         }
 
         //Установка стартовых значений и стартовой позиции
